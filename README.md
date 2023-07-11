@@ -1,27 +1,37 @@
-# CesiumApp
+- **Leaflet**:
+  - Capabilities: Leaflet is primarily a 2D map engine. It supports the addition of plugins like Leaflet-3D, Leaflet-XYZ, or Leaflet.Curve to add certain 3D effects to the maps, but it does not provide a full 3D experience natively.
+  - Key Features: Lightweight and easy-to-use library, ideal for simple 2D map applications. Offers a wide range of plugins and has an active developer community. Extensive and high-quality documentation.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+- **OpenLayers**:
+  - Capabilities: Highly flexible map engine that supports both 2D maps and 3D spherical representations. Can create flat maps or spherical representations using various projections.
+  - Key Features: Comprehensive set of features for map application development. Supports multiple projections, integration with web map services, vector layers, 3D data, user interaction, and an extensible API.
 
-## Development server
+- **CesiumJS**:
+  - Capabilities: 3D map engine that represents the Earth as a 3D sphere. Displays detailed and accurate 3D spherical maps. Supports visualization of 3D geospatial data such as models, terrains, and point clouds.
+  - Key Features: Highly interactive and realistic 3D map experience. Virtual flights, simulation of lighting effects, and atmospheric rendering. Popular for advanced 3D visualizations and geospatial data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Mapbox GL JS**:
+  - Capabilities: Map engine focused on 2D map representation, but can simulate 3D spherical representations using visual tricks. Allows for effects like extrusion and shadow to create a 3D appearance in 2D maps.
+  - Key Features: Wide variety of customizable styles and layers to create attractive maps. Integration with tile services. Provides a good user experience but has limited 3D capabilities compared to dedicated 3D map engines.
 
-## Code scaffolding
+------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Map Engine   | Companies Using It                                         | Users                                                                 | Costs                                                                     | Release Date | Community                                                                |
+|--------------|------------------------------------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------|
+| Leaflet      | Facebook, Pinterest, Flickr, Airbnb, GitHub, and others     | Wide user base including individual developers and companies          | Free and open-source for both commercial and non-commercial use            | 2010         | Active community of developers, support in forums and discussion channels |
+| OpenLayers   | NASA, Airbnb, HERE Technologies, Mapbox, and others          | Global community of users, including individual developers and companies | Free and open-source for both commercial and non-commercial use            | 2006         | Active community of developers, improvements, plugins, and support         |
+| CesiumJS     | Boeing, NVIDIA, Esri, Analytical Graphics Inc. (AGI), and others | Global community of developers, researchers, and geospatial visualization professionals | Free version available, paid version with additional features and premium support | 2011         | Active community of developers, projects, plugins, and support in the community forum |
+| Mapbox GL JS | The New York Times, Lonely Planet, Airbnb, Instacart, and others | Wide community of developers and users creating custom map applications     | Various pricing plans, including free options and paid plans with extended features and limits | 2015         | Active community of developers, projects, plugins, and support through the Mapbox platform |
 
-## Build
+------
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Map Engine   | Advantages                                                     | Disadvantages                                                                  |
+|--------------|----------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Leaflet      | - Easy to use and lightweight.                                 | - Does not provide a full 3D spherical map experience natively.                |
+|              | - Wide community of developers and good documentation.         | - Requires additional plugins for limited 3D effects.                           |
+| OpenLayers   | - Supports both 2D and 3D spherical maps.                      | - Can be more complex to learn and set up compared to Leaflet.                 |
+|              | - Offers a wide range of features and options.                 | - Requires more advanced knowledge to fully leverage its potential.            |
+| CesiumJS     | - Provides a complete and realistic 3D map experience.         | - Requires more hardware resources and processing power.                        |
+|              | - Allows visualization of 3D geospatial data.                 | - Steeper learning curve due to its focus on 3D maps.                           |
+| Mapbox GL JS | - Offers visually appealing options for simulating 3D spherical representations on 2D maps. | - 3D capabilities are limited compared to dedicated 3D map engines. |
+|              | - Integration with tile services and customizable styles.      | - Does not provide a complete and realistic 3D experience like CesiumJS.        |
